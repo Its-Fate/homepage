@@ -1,6 +1,7 @@
 body {
     background-color: #fff;
     color: #212529;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
@@ -24,7 +25,7 @@ body {
 
 .montserrat-main {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     font-style: normal;
     color: #000;
@@ -78,6 +79,6 @@ body {
 
 
 img {
-    width: 15rem;
-    height: 15rem;
+    width: 16rem;
+    height: 16rem;
 }
