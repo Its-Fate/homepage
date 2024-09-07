@@ -56,6 +56,10 @@ body {
     display: flex;
 }
 
+.waveStatic {
+    
+}
+
 .wave {
     width: 50%; /* Each wave takes half the container width */
     height: auto;
