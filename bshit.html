@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+
+                // Creat event handlers for incorrect answers
+                let incorrects = document.querySelectorAll('#incorrect');
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrect[i].addEventListener('click', function()
+                {
+                    incorrect[i].style.backgroundColor = 'red';
+                    document.getElementById('multipleAnswer').innerHTML = 'Incorrect!';
+                })
+                }
+
+                // Create event handler for the correct answer
+                let correct = document.querySelector('#correct');
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = 'green';
+                    document.getElementById('multipleAnswer').innerHTML = 'Correct!';
+                })
+
+                // Create event handlers for the free response question
+                document.getElementById('freeButton').addEventListener('click', function() {
+                    let answer = document.querySelector('input');
+                    if (answer.value === 'banana') {
+                        answer.style.backgroundColor = 'green';
+                        document.getElementById('freeAnswer').innerHTML = 'Correct!';
+                    }
+                    else {
+                        answer.style.backgroundColor = 'red';
+                        document.getElementById('freeAnswer').innerHTML = 'Incorrect!';
+                    }
+                })
+            })
+
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+          <h1>Trivia!</h1>
+          <div class="wave-container">
+            <svg class="wave" viewBox="0 0 1440 320">
+                <path fill="#FFFFFF" fill-opacity="1" d="M0,160 Q390,250 720,160 T1440,160 L1440,320 L0,320 Z"></path>
+            </svg>
+            <svg class="wave" viewBox="0 0 1440 320">
+                <path fill="#FFFFFF" fill-opacity="1" d="M0,160 Q390,250 720,160 T1440,160 L1440,320 L0,320 Z"></path>
+            </svg>
+        </div>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <h3>Let's imagine I'm asking you a question here that is reletively hard?</h3>
+                 <button id="incorrect">This is wrong</button>
+                 <button id="incorrect">This is also wrong</button>
+                 <button id="correct">This is correct though</button>
+                 <button id="incorrect">Wrong again</button>
+                 <p id="multipleAnswer"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>I'm now asking you a free response question?</h3>
+                <input type="text" placeholder="answer">
+                <button id="freeButton">Check</button>
+                <p id="freeAnswer"></p>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+body {
+    background-color: #fff;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    background:
+        linear-gradient(to right, rgba(31, 144, 255, 1), rgba(31, 144, 255, 0)),
+        url('https://www.transparentpng.com/download/pattern/p3NBVZ-data-security-and-privacy-software-services-safe-data.png'),
+        #1F90FF;
+    color: #fff;
+    position: relative;
+    margin-bottom: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-align: left;
+}
+
+@keyframes wave-animation {
+  0% {d: "M0 30 V12 Q30 17 55 2 T100 11 V30z";}
+  50% {d: "M0 30 V15 Q30 20 55 5 T100 14 V30z";}
+  100% {d: "M0 30 V12 Q30 17 55 2 T100 11 V30z";}
+}
+
+.wave {
+  position: absolute;
+  animation: wave-animation 5s infinite;
+}
+
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+.section:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+button, input[type="submit"] {
+    background-color: #d9edff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+
+input[type="text"] {
+    line-height: 1.8;
+    width: 25%;
+}
+
+input[type="text"]:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}

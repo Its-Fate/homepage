@@ -1,0 +1,80 @@
+body {
+    background-color: #fff;
+    color: #212529;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+.montserrat-h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.montserrat-fade {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.montserrat-main {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    color: #000;
+}
+
+.header {
+    background:
+        linear-gradient(to right, rgba(31, 144, 255, 1), rgba(31, 144, 255, 0)),
+        url('https://www.transparentpng.com/download/pattern/p3NBVZ-data-security-and-privacy-software-services-safe-data.png'),
+        #1F90FF;
+    color: #fff;
+    position: relative;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-align: left;
+}
+
+.waveContainer {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: auto;
+    margin-left: -1rem;
+    margin-bottom: -1rem;
+    display: flex;
+}
+
+.wave {
+    width: 50%; /* Each wave takes half the container width */
+    height: auto;
+    animation: waveMove 10s linear infinite;
+}
+
+@keyframes waveAnimation {
+    0%  { d: path("M0,160 Q390,250 720,160 T1440,160 L1440,320 L0,320 Z"); }
+    50% { d: path("M0,140 Q390,270 720,140 T1440,140 L1440,320 L0,320 Z"); }
+    100%{ d: path("M0,160 Q390,250 720,160 T1440,160 L1440,320 L0,320 Z"); }
+}
+
+.wave path {
+    animation: waveAnimation 5s infinite;
+}
+
+@keyframes waveMove {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+
+
