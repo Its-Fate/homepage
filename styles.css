@@ -90,3 +90,17 @@ img {
     width: 16rem;
     height: 16rem;
 }
+
+footer {
+    background:
+        linear-gradient(to right, rgba(31, 144, 255, 1), rgba(31, 144, 255, 0)),
+        url('https://www.transparentpng.com/download/pattern/p3NBVZ-data-security-and-privacy-software-services-safe-data.png'),
+        #1F90FF;
+    color: #fff;
+    font-size: 2rem;
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
