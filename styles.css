@@ -104,3 +104,21 @@ footer {
     padding-right: 1rem;
     padding-left: 1rem;
 }
+
+.info {
+    background:
+        linear-gradient(to right, rgba(0, 0, 204, 1), rgba(51, 153, 255, 1)),
+        #000;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.25rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
