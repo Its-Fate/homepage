@@ -122,3 +122,6 @@ footer {
     padding-right: 2rem;
 }
 
+.custom-disabled {
+    opacity: 0.5;
+  }
