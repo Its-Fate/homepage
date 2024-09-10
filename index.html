@@ -62,5 +62,13 @@
         <script>
             AOS.init();
         </script>
+        <script>
+            let buttons = document.querySelectorAll('.btn.btn-primary');
+            for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function() {
+                buttons[i].classList.add('custom-disabled');
+            });
+            }
+        </script>
     </body>
 </html>
