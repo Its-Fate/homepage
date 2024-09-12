@@ -15,9 +15,32 @@
         </div>
 
         <div class="info">
-            <div style="padding-top: 4rem; padding-bottom: 2rem;">E-mail: akbari7fatemeh@gmail.com</div>
-            <div style="padding: 2rem 2rem;">LinkedIn: linkedin.com/in/akbari7fatemeh</div>
-            <div style="padding-top: 2rem; padding-bottom: 8rem;">GitHub: github.com/Its-Fate</div>
+            <div id="email" style="padding-top: 4rem; padding-bottom: 2rem;">Email: akbari7fatemeh@gmail.com</div>
+            <div id="linkedin" style="padding: 2rem 2rem;">LinkedIn: linkedin.com/in/akbari7fatemeh</div>
+            <div id="github" style="padding-top: 2rem; padding-bottom: 8rem;">GitHub: github.com/Its-Fate</div>
         </div>
+
+        <script>
+            // Copy email
+            document.getElementById('email').addEventListener('click', function() {
+                navigator.clipboard.writeText('akbari7fatemeh@gmail.com').then(function() {
+                    alert('Email copied!');
+                })
+            });
+
+            // Copy LinkedIn
+            document.getElementById('linkedin').addEventListener('click', function() {
+                navigator.clipboard.writeText('linkedin.com/in/akbari7fatemeh').then(function() {
+                    alert('LinkedIn account address copied!');
+                })
+            });
+
+            // Copy GitHub
+            document.getElementById('github').addEventListener('click', function() {
+                navigator.clipboard.writeText('github.com/Its-Fate').then(function() {
+                    alert('GitHub account address copied!');
+                })
+            });
+        </script>
     </body>
 </html>

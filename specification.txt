@@ -1,0 +1,39 @@
+HTML tags:
+<link>
+<script>
+<meta>
+<div>
+<h1>
+<h2>
+<svg>
+<path>
+<img>
+<a>
+<button>
+<footer>
+<p>
+
+CSS properties:
+background-color
+color
+font-size
+font-weight
+line-height
+margin
+text-align
+font-family
+font-style
+background
+position
+padding
+bottom
+width
+height
+display
+animation
+-webkit-background-clip
+opacity
+
+I used Javascript to make the buttons look disabled after they've been clicked once, created a button that scrolls to the top, and lastly copy some text to clipboard once an element is clicked.
+
+I used Bootstrap to create different buttons.
